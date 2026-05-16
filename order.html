@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Now | Battle Born Flags</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+
+    nav {
+      background: #050505;
+      padding: 15px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d6b36a;
+    }
+
+    .section {
+      max-width: 800px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      text-align: center;
+    }
+
+    form {
+      background: #1a1a1a;
+      border-radius: 12px;
+      border: 1px solid #333;
+      padding: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 15px;
+      background: #b31942;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #8e1234;
+    }
+
+    .note {
+      color: #bbb;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+
+    footer {
+      background: #050505;
+      text-align: center;
+      padding: 30px;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="order.html">Order Now</a>
+  <a href="recent-work.html">Recent Work</a>
+</nav>
+
+<section class="section">
+  <h1>Order Now</h1>
+
+  <p>
+    Fill out the form below and I’ll contact you if I have any questions about your order.
+  </p>
+
+  <form action="https://formspree.io/f/mrejnojr" method="POST">
+
+    <label>Your Name</label>
+    <input type="text" name="name" required>
+
+    <label>Email Address</label>
+    <input type="email" name="email" required>
+
+    <label>Flag Type</label>
+    <select name="flag_type" required>
+      <option value="">Select One</option>
+      <option>Wavy Flag - Wood Stripe - $200</option>
+      <option>Wavy Flag - White Stripe - $200</option>
+      <option>Flat Flag - $150</option>
+      <option>Custom Wavy Flag - $225</option>
+      <option>Custom Flat Flag - $205</option>
+    </select>
+
+    <label>If Custom, Describe Your Design</label>
+    <textarea name="custom_design" placeholder="Describe colors, design, wording, logo, or anything else you want."></textarea>
+
+    <label>Anything Else?</label>
+    <textarea name="notes"></textarea>
+
+    <button type="submit">Send Order Request</button>
+
+    <p class="note">
+      Complex custom designs may use a sticker if needed.
+    </p>
+
+  </form>
+</section>
+
+<footer>
+  <p>Battle Born Flags</p>
+  <p>battlebornflags@gmail.com</p>
+</footer>
+
+</body>
+</html>
