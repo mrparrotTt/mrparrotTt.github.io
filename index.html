@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Battle Born Flags</title>
+
   <style>
     body {
       margin: 0;
@@ -15,7 +16,7 @@
     header {
       text-align: center;
       padding: 40px 20px;
-      background: #ffffff;
+      background: white;
       color: #111;
     }
 
@@ -25,7 +26,7 @@
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 48px;
       margin: 20px 0 10px;
     }
 
@@ -36,21 +37,20 @@
     }
 
     .hero h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      font-size: 38px;
     }
 
     .hero p {
-      font-size: 19px;
-      max-width: 750px;
-      margin: 10px auto;
+      max-width: 800px;
+      margin: auto;
       line-height: 1.6;
+      font-size: 18px;
     }
 
     .section {
-      padding: 50px 20px;
       max-width: 1100px;
       margin: auto;
+      padding: 50px 20px;
     }
 
     .cards {
@@ -60,24 +60,23 @@
     }
 
     .card {
-      background: #1b1b1b;
-      border: 1px solid #333;
+      background: #1a1a1a;
       border-radius: 12px;
-      padding: 22px;
+      border: 1px solid #333;
+      padding: 25px;
     }
 
     .card h3 {
+      color: #d6b36a;
       margin-top: 0;
-      color: #d8b36a;
     }
 
     .price {
-      font-size: 26px;
+      font-size: 28px;
       font-weight: bold;
-      color: #fff;
     }
 
-       .gallery {
+    .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
@@ -93,22 +92,24 @@
     }
 
     form {
-      background: #1b1b1b;
-      padding: 25px;
+      background: #1a1a1a;
       border-radius: 12px;
       border: 1px solid #333;
+      padding: 25px;
     }
 
     label {
       display: block;
       margin-top: 18px;
+      margin-bottom: 6px;
       font-weight: bold;
     }
 
-    input, select, textarea {
+    input,
+    select,
+    textarea {
       width: 100%;
       padding: 12px;
-      margin-top: 7px;
       border-radius: 8px;
       border: none;
       font-size: 16px;
@@ -124,127 +125,137 @@
       width: 100%;
       padding: 15px;
       background: #b31942;
-      color: white;
       border: none;
       border-radius: 8px;
+      color: white;
       font-size: 18px;
       font-weight: bold;
       cursor: pointer;
     }
 
     button:hover {
-      background: #8f1435;
+      background: #8e1234;
     }
 
     footer {
+      background: #050505;
       text-align: center;
       padding: 30px;
-      background: #050505;
       color: #aaa;
     }
 
     .note {
-      color: #ccc;
+      color: #bbb;
       font-size: 14px;
+      margin-top: 12px;
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <img src="logo.png" alt="Battle Born Flags Logo">
-    <h1>Battle Born Flags</h1>
-    <p>Handmade wooden American flags built with character, grit, and pride.</p>
-  </header>
+<header>
+  <img src="logo.png" alt="Battle Born Flags Logo">
+  <h1>Battle Born Flags</h1>
+  <p>Handmade wooden American flags built with pride.</p>
+</header>
 
-  <section class="hero">
-    <h2>Custom Wooden Flags</h2>
-    <p>
-      Battle Born Flags makes handmade wooden American flags sized at
-      <strong>38 x 19.5 inches</strong>. Choose from wavy flags, flat flags,
-      natural wood stripe designs, white stripe designs, or custom builds.
+<section class="hero">
+  <h2>Custom Wooden American Flags</h2>
+  <p>
+    Battle Born Flags creates handcrafted wooden flags sized at
+    <strong>38 x 19.5 inches</strong>.
+    Available in wavy or flat styles with natural wood stripes,
+    white stripes, and custom designs.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Flag Options</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Wavy Flag</h3>
+      <p class="price">$200</p>
+      <p>Available with natural wood-colored stripes or white stripes.</p>
+    </div>
+
+    <div class="card">
+      <h3>Flat Flag</h3>
+      <p class="price">$150</p>
+      <p>Classic flat wooden American flag.</p>
+    </div>
+
+    <div class="card">
+      <h3>Custom Wavy Flag</h3>
+      <p class="price">$225</p>
+      <p>Custom designs available. Complex designs may use a sticker.</p>
+    </div>
+
+    <div class="card">
+      <h3>Custom Flat Flag</h3>
+      <p class="price">$205</p>
+      <p>Custom flat flag with your requested design.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Recent Work</h2>
+
+  <div class="gallery">
+    <img src="wood-stripe-flag.jpg" alt="Wood stripe flag">
+    <img src="white-stripe-flag.jpg" alt="White stripe flag">
+  </div>
+</section>
+
+<section class="section">
+  <h2>Order Request Form</h2>
+
+  <p>
+    Fill out the form below and I’ll contact you if I have questions about your order.
+  </p>
+
+  <form action="https://formspree.io/f/mrejnojr" method="POST">
+
+    <label>Your Name</label>
+    <input type="text" name="name" required>
+
+    <label>Email Address</label>
+    <input type="email" name="email" required>
+
+    <label>Flag Type</label>
+    <select name="flag_type" required>
+      <option value="">Select One</option>
+
+      <option>Wavy Flag - Wood Stripe - $200</option>
+      <option>Wavy Flag - White Stripe - $200</option>
+      <option>Flat Flag - $150</option>
+      <option>Custom Wavy Flag - $225</option>
+      <option>Custom Flat Flag - $205</option>
+    </select>
+
+    <label>If Custom, Describe Your Design</label>
+    <textarea name="custom_design"></textarea>
+
+    <label>Anything Else?</label>
+    <textarea name="notes"></textarea>
+
+    <button type="submit">Send Order Request</button>
+
+    <p class="note">
+      Complex custom designs may use a sticker if needed.
     </p>
-  </section>
 
-  <section class="section">
-    <h2>Flag Options</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Wavy Flag</h3>
-        <p class="price">$200</p>
-        <p>Available with natural wood-colored stripes or normal white stripes.</p>
-      </div>
+  </form>
+</section>
 
-      <div class="card">
-        <h3>Flat Flag</h3>
-        <p class="price">$150</p>
-        <p>A clean, flat wooden flag design.</p>
-      </div>
-
-      <div class="card">
-        <h3>Custom Wavy Flag</h3>
-        <p class="price">$225</p>
-        <p>Custom designs available. If the design is too complex, it may be made as a sticker.</p>
-      </div>
-
-      <div class="card">
-        <h3>Custom Flat Flag</h3>
-        <p class="price">$205</p>
-        <p>Custom flat wooden flags made to order.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Recent Work</h2>
-    <div class="gallery">
-      <img src="wood-stripe-flag.jpg" alt="Wood stripe wavy wooden American flag">
-      <img src="white-stripe-flag.jpg" alt="White stripe wavy wooden American flag">
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Order Request Form</h2>
-    <p>Fill this out and I’ll contact you if I have any questions.</p>
-
-    <form action="https://formspree.io/f/mrejnojr" method="POST">
-      <input type="hidden" name="_subject" value="New Battle Born Flags Order Request">
-      <input type="hidden" name="_captcha" value="true">
-
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="Name" required>
-
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="Email" required>
-
-      <label for="flag-type">What kind of flag do you want?</label>
-      <select id="flag-type" name="Flag Type" required>
-        <option value="">Select one</option>
-        <option value="Wavy Flag - Wood Color Stripe - $200">Wavy Flag - Wood Color Stripe - $200</option>
-        <option value="Wavy Flag - White Stripe - $200">Wavy Flag - White Stripe - $200</option>
-        <option value="Flat Flag - $150">Flat Flag - $150</option>
-        <option value="Custom Wavy Flag - $225">Custom Wavy Flag - $225</option>
-        <option value="Custom Flat Flag - $205">Custom Flat Flag - $205</option>
-      </select>
-
-      <label for="custom">If custom, describe what you want</label>
-      <textarea id="custom" name="Custom Design Description" placeholder="Describe colors, logo, design, wording, or anything else you want."></textarea>
-
-      <label for="questions">Anything else I should know?</label>
-      <textarea id="questions" name="Extra Notes"></textarea>
-
-      <button type="submit">Send Order Request</button>
-
-      <p class="note">
-        Custom designs may use a sticker if the design is too complex for wood detailing.
-      </p>
-    </form>
-  </section>
-
-  <footer>
-    <p>Battle Born Flags</p>
-    <p>Email: battlebornflags@gmail.com</p>
-  </footer>
+<footer>
+  <p>Battle Born Flags</p>
+  <p>battlebornflags@gmail.com</p>
+</footer>
 
 </body>
 </html>
