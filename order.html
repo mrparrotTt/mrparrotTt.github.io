@@ -130,22 +130,47 @@
     <input type="email" name="email" required>
 
     <label>Flag Type</label>
+
     <select name="flag_type" required>
+
       <option value="">Select One</option>
-      <option>Wavy Flag - Wood Stripe - $200</option>
-      <option>Wavy Flag - White Stripe - $200</option>
-      <option>Flat Flag - $150</option>
-      <option>Custom Wavy Flag - $225</option>
-      <option>Custom Flat Flag - $205</option>
+
+      <option>
+        Wavy Flag - Wood Stripe - $200
+      </option>
+
+      <option>
+        Wavy Flag - White Stripe - $200
+      </option>
+
+      <option disabled>
+        Flat Flag - OUT OF STOCK
+      </option>
+
+      <option>
+        Custom Wavy Flag - $225
+      </option>
+
+      <option>
+        Custom Flat Flag - $205
+      </option>
+
     </select>
 
     <label>If Custom, Describe Your Design</label>
-    <textarea name="custom_design" placeholder="Describe colors, design, wording, logo, or anything else you want."></textarea>
+
+    <textarea
+      name="custom_design"
+      placeholder="Describe colors, design, wording, logo, or anything else you want."
+    ></textarea>
 
     <label>Anything Else?</label>
+
     <textarea name="notes"></textarea>
 
-    <button type="submit">Send Order Request</button>
+    <button type="submit">
+      Send Order Request
+    </button>
 
     <p class="note">
       Complex custom designs may use a sticker if needed.
